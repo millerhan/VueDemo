@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/myvue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+	</head>
+	<body>
+		<div id="app7">
+			{{message}}
+			<input type="text" v-model="message" />
+			<input type="button" v-on:click="clickBtn1" value="按钮1"/>
+			<input type="button" v-on:click="clickBtn2('信息')" value="按钮2"/>
+			<input type="button" @click="clickBtn3" value="按钮3"/>
+		</div>
+	</body>
+</html>

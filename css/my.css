@@ -1,0 +1,15 @@
+ul{
+	list-style-type: none;
+	clear: both;
+}
+
+li{
+	float: left;
+	width: 100px;
+	border: 1px solid blue;
+}
+
+
+.bigFont{
+	font-size: 50px;
+}

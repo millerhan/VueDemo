@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/myvue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+	</head>
+	<body>
+		<div id="app6">
+			<ul v-for="n in tpage">
+				<a v-bind:class="n===cpage?'bigFont':''" href="#">{{n}}</a>
+				<a :class="n===cpage?'bigFont':''" href="#">{{n}}</a>
+			</ul>
+		</div>
+	</body>
+</html>
